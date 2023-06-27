@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 
 const API_KEY = process.env.REACT_APP_GIPHY_API_KEY;
 
-const url = `https://g.tenor.com/v1/search?q&key=${API_KEY}&random=true`
+const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`
 
 export default function useGif({ tag }) {
 
